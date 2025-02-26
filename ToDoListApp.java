@@ -1,6 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
+
 
 public class ToDoListApp {
 
@@ -8,9 +7,9 @@ public class ToDoListApp {
         return "1. Add a task \n 2. View tasks \n 3. Mark task as complete \n 4. Delete a task \n 5. Exit";
     }
 
-    public static void addTasks(List<String> tasks, Scanner scanner) {
+    public static void addTasks(List<String> tasks, Scanner receiver) {
         System.out.print("Enter the task: ");
-        String task = scanner.nextLine();
+        String task = receiver.nextLine();
         tasks.add(task);
         System.out.println("\nTask added!\n");
     }
@@ -25,11 +24,11 @@ public class ToDoListApp {
         }
     }
 
-    public static void markCompletedTasks(List<Integer> completeds, Scanner scanner) {
+    public static void markCompletedTasks(List<Integer> completeds, Scanner receiver) {
         while (true) {
             try {
                 System.out.print("Which task do you want to mark as completed task?: ");
-                int completed = Integer.parseInt(scanner.nextLine());
+                int completed = Integer.parseInt(receiver.nextLine());
                 completeds.add(completed);
                 break;
             } catch (NumberFormatException e) {
@@ -38,9 +37,9 @@ public class ToDoListApp {
         }
     }
 
-    public static void deleteTask(List<String> tasks, Scanner scanner) {
+    public static void deleteTask(List<String> tasks, Scanner receiver) {
         System.out.print("Which task do you want to delete?: ");
-        int delete = Integer.parseInt(scanner.nextLine());
+        int delete = Integer.parseInt(receiver.nextLine());
         tasks.remove(delete - 1);
     }
 
@@ -48,7 +47,7 @@ public class ToDoListApp {
         List<String> tasks = new ArrayList<>();
         List<Integer> completeds = new ArrayList<>();
         List<Integer> deletes = new ArrayList<>();
-        Scanner scanner = new Scanner(System.in);
+        Scanner receiver = new Scanner(System.in);
 
         System.out.println("\nTo-Do list Manager\n");
 
@@ -59,22 +58,22 @@ public class ToDoListApp {
             while (true) {
                 try {
                     System.out.print("Enter your choice: ");
-                    int choice = Integer.parseInt(scanner.nextLine());
+                    int choice = Integer.parseInt(receiver.nextLine());
                     if (choice <= 0 || choice > 5) {
                         System.out.println("\nInvalid input, kindly enter the right input");
                     } else {
                         switch (choice) {
                             case 1:
-                                addTasks(tasks, scanner);
+                                addTasks(tasks, receiver);
                                 break;
                             case 2:
                                 viewTasks(tasks, completeds);
                                 break;
                             case 3:
-                                markCompletedTasks(completeds, scanner);
+                                markCompletedTasks(completeds, receiver);
                                 break;
                             case 4:
-                                deleteTask(tasks, scanner);
+                                deleteTask(tasks, receiver);
                                 break;
                             case 5:
                                 System.out.println("Exiting the app. Goodbye!🙋‍♂️");
