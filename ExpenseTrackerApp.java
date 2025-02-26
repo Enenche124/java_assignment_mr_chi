@@ -1,8 +1,5 @@
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.text.*;
+import java.util.*;
 
 public class ExpenseTrackerApp {
 
