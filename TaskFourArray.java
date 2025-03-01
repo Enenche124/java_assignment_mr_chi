@@ -3,6 +3,7 @@ import java.util.*;
 
 public class TaskFourArray{
 
+
      public static int taskFourOdd(int[] oddElements) {
 
 

@@ -36,6 +36,7 @@ public class TaskThreeArray{
    int[] taskThreeLists = {14, 52, 33, 45, 59, 26, 77};
 
       System.out.println(taskThreeOccursList(taskThreeLists, 59));
+
       System.out.println(taskThreeOccursList(taskThreeLists, 5));
 
 

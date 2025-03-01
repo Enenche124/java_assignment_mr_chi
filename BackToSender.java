@@ -6,31 +6,32 @@ public class BackToSender{
   
      if(riderTotalDelivery == 0){
 		 
-	 System.out.println("No wages for rider, Zero package delivery");
+	 System.out.println("No bonus for rider, Zero package delivery");
 	 }
        int basePay = 5000;
-	  int amountPerParcel = 160, wages = 0;
-	  int amountPerParcelFiftyPercent = 200;
-	  int amountPerParcelSixtyPercent = 250;
-	  int amountPerParcelSeventyPercent = 500;
+	   int wages = 0
+	  int amountPerParcelLessThanFiftyPercent = 160;
+	  int amountPerParcelInRangeFiftyToFiftyNinePercent = 200;
+	  int amountPerParcelInRangeSixtyToSixtyNinePercent = 250;
+	  int amountPerParcelInRangeSeventyToHundredPercent = 500;
 	  
 	  
 	  
      if(riderTotalDelivery < 50){
 		 
-	  wages = riderTotalDelivery * amountPerParcel + basePay;	 
+	  wages = riderTotalDelivery * amountPerParcelLessThanFiftyPercent + basePay;	 
 	 
 	 }else if(riderTotalDelivery <= 59){
 		 
-		 wages = riderTotalDelivery * amountPerParcelFiftyPercent + basePay;
+		 wages = riderTotalDelivery * amountPerParcelInRangeFiftyToFiftyNinePercent + basePay;
 		 
 	 }else if(riderTotalDelivery <= 69){
 		 
-		 wages = riderTotalDelivery * amountPerParcelSixtyPercent + basePay;
+		 wages = riderTotalDelivery * amountPerParcelInRangeSixtyToSixtyNinePercent + basePay;
 		 
 	 }else if(riderTotalDelivery >= 70){
 		 
-		 wages = riderTotalDelivery * amountPerParcelSeventyPercent + basePay;
+		 wages = riderTotalDelivery * amountPerParcelInRangeSeventyToHundredPercent + basePay;
 	}
 	 return wages;
   }

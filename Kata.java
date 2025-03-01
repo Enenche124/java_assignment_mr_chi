@@ -79,22 +79,22 @@ public static boolean taskSix(int number){
 
 public static int taskEight(int number){
 
- if(number == 0 || number == 1){
+ //if(number == 0 || number == 1){
 
-return 1;
+//return 1;
 
-}else{
+//}else{
 
 int total = 1;
 
-for(int j = 2; j <= number; j++){
+for(int j = 1; j <= number; j++){
 
 total = total * j;
 
 }
 return total;
 
-}
+//#}
  
 }
 
@@ -122,7 +122,7 @@ System.out.println(taskFour(15, 0));
 
 System.out.println(taskFive(10));
 System.out.println(taskSix(25));
-System.out.println(taskEight(5));
+System.out.println(taskEight(6));
 System.out.println(taskNine(5));
 
 

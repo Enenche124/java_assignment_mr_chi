@@ -24,7 +24,7 @@ public class CompoundInterestCalculator {
         System.out.print("Enter the principal amount: $");
         double principal = scanner.nextDouble();
 
-        System.out.print("Enter the annual interest rate (%): ");
+        System.out.print("Enter the annual interest rate (%: ");
         double interestRate = scanner.nextDouble();
 
         System.out.print("Enter the duration (years): ");
@@ -34,7 +34,7 @@ public class CompoundInterestCalculator {
         double frequency = scanner.nextDouble();
 		
 		System.out.print("Enter your PMT: $");
-        double monthlyContribution = scanner.nextDouble();
+       double monthlyContribution = scanner.nextDouble();
 		
 		
 		double  compoundInterest = calculateCompoundInterest(principal, interestRate, duration, frequency, monthlyContribution);

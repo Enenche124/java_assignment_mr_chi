@@ -22,7 +22,6 @@ return largest;
 }
 
 
-  // TASK TWO ARRAYKATA
 
 
  public static int smallestElement(int[] smallestArray){
@@ -47,7 +46,6 @@ return smallest;
 
 
 
-  // TASK THREE ARRAYKATA
 
 
  public static int sumOfElement(int[] sumOfArray){
@@ -69,8 +67,6 @@ return total;
 }
 
 
-
-  // TASK FOUR ARRAYKATA
 
 
  public static int sumOfEvenNumbers(int[] sumOfEvenArray){
@@ -94,7 +90,6 @@ return sumOfEven;
 }
 
 
-  // TASK FIVE ARRAYKATA
 
 
  public static int sumOfOddNumbers(int[] sumOfOddArray){
@@ -122,7 +117,6 @@ return sumOfOdd;
 
 
 
-  // TASK SEVEN ARRAYKATA
 
 
  public static int numberOfOddNumbers(int[] numberOfOddNumbersArray){
@@ -145,11 +139,6 @@ return oddNumbers;
 
 
 
-
-
-  // TASK EIGHT ARRAYKATA
-
-
  public static int numberOfEvenNumbers(int[] numberOfEvenNumbersArray){
 
 
@@ -170,13 +159,7 @@ return evenNumbers;
 
 
 
-
-
-  // TASK SIX ARRAYKATA
-
-
  public static int[] maxAndMinArrayEl(int[] maxMinArray){
-
 
 int max = maxMinArray[0];
 
@@ -204,11 +187,8 @@ return new int[]{max, min};
 
 
 
-  // TASK ELEVEN ARRAYKATA
 
  public static int[] squaredArrayNumber(int[] squareArray){
-
-//for(int counter = 0; counter < squareArray.length; counter++){
 
     int sq1 = squareArray[0] * squareArray[0];
 
@@ -219,17 +199,12 @@ return new int[]{max, min};
     int sq4 = squareArray[3] * squareArray[3];
 
     int sq5 = squareArray[4] * squareArray[4];
-
-
  
- //} 
+ 
 
 return new int[]{sq1, sq2, sq3, sq4, sq5};
+
 }
-
-
-
-
 
 
 
@@ -237,7 +212,10 @@ return new int[]{sq1, sq2, sq3, sq4, sq5};
 public static void main(String[] args){
 
 
-int[] taskOneLists = {8, 77, 99, 30, 20};
+int[] taskOneLists = {8, 77, -88, 99, 0,  -1, 30, 20};
+
+
+
 
 System.out.println("The largest element in  the Array is -> " + largestElement(taskOneLists));
 

@@ -8,7 +8,7 @@ public class PizzaWahala{
 	   
 	    System.out.printf("%s%n", "Welcome to Iya Moses Pizza joint Ajegunle.");
 		
-	   System.out.print("Enter number of yous guest: ");
+	   System.out.print("Enter number of your guest: ");
 	   
 	   int numberOfGuest = receiver.nextInt();
 	   
@@ -29,38 +29,36 @@ public class PizzaWahala{
 	   """);
 	   
 	   
-	   double numberOfBoxToBuy = numberOfGuest / 4;
-	   double numberOfBoxToBuyS = numberOfGuest / 6;
-	   double numberOfBoxToBuyB = numberOfGuest / 8;
-	   double numberOfBoxToBuyO = numberOfGuest / 12;
+	    int sapaPrice = 2500, sapaSlice = 4,  smallPrice = 2900, smallMoneySlice = 6, bigBoysPrice = 4000, bigBoysSlice = 8, odogwuPrice = 5200, odogwuSlice = 12;
 	   
 	   
-	   if(numberOfGuest % 4 != 0)numberOfBoxToBuy = numberOfBoxToBuy + 1;
-	    if(numberOfGuest % 6 != 0)numberOfBoxToBuyS = numberOfBoxToBuyS + 1;
-		if(numberOfGuest % 8 != 0)numberOfBoxToBuyB = numberOfBoxToBuyB + 1;
-		if(numberOfGuest % 12 != 0)numberOfBoxToBuyO = numberOfBoxToBuyO + 1;
 	   
-	   double leftOver = numberOfBoxToBuy * 4;
+	   double numberOfBoxToBuy = numberOfGuest / sapaSlice;
+	   double numberOfBoxToBuyS = numberOfGuest / smallMoneySlice;
+	   double numberOfBoxToBuyB = numberOfGuest / bigBoysSlice;
+	   double numberOfBoxToBuyO = numberOfGuest / odogwuSlice;
+	   
+	   
+	   if(numberOfGuest % sapaSlice != 0)numberOfBoxToBuy = numberOfBoxToBuy + 1;
+	    if(numberOfGuest % smallMoneySlice != 0)numberOfBoxToBuyS = numberOfBoxToBuyS + 1;
+		if(numberOfGuest % bigBoysSlice != 0)numberOfBoxToBuyB = numberOfBoxToBuyB + 1;
+		if(numberOfGuest % odogwuSlice != 0)numberOfBoxToBuyO = numberOfBoxToBuyO + 1;
+	   
+	   double leftOver = numberOfBoxToBuy * sapaSlice;
 	   double left = leftOver - numberOfGuest;
 	   
-	   double leftOverS = numberOfBoxToBuyS * 6;
+	   double leftOverS = numberOfBoxToBuyS * smallMoneySlice;
 	   double  left2 = leftOverS - numberOfGuest;
 	   
 	   
-	   double leftOverB = numberOfBoxToBuyB * 8;
+	   double leftOverB = numberOfBoxToBuyB * bigBoysSlice;
 	   double left3 = leftOverB - numberOfGuest;
 	   
-	   double leftOverO = numberOfBoxToBuyO * 12;
+	   double leftOverO = numberOfBoxToBuyO * odogwuSlice;
 	   double left4 = leftOverO - numberOfGuest;
 	   
-	   
-	   int sapa, sapaPrice = 2500, sapaSlice = 4;
-	   
-	   int small, smallPrice = 2900, smallSlice = 8;
-	   
-	   int bigBoys, bigBoysPrice = 4000, bigBoysSlice = 6;
-	   
-	   int odogwu, odogwuPrice = 5200, odogwuSlice = 12;
+	   	   
+	 
 	   
 	   
 	   

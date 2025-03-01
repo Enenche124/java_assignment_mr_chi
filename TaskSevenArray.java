@@ -3,27 +3,25 @@ import java.util.*;
 
 public class TaskSevenArray{
 
-     public static boolean taskSixEven(String palindrome) {
+     public static boolean taskSevenEven(String palindrome) {
 
   
-StringBuilder palind = new StringBuilder(palindrome);
+    StringBuilder palind = new StringBuilder(palindrome);
        
 
 
+        return palind.reverse().toString().equals(palindrome);
 
-
-  return palind.reverse().toString().equals(palindrome);
-
-}
+   }
 
 
 
-    public static void main(String[] args) {
+       public static void main(String[] args) {
 
 
-      System.out.println(taskSixEven("54145"));
+         System.out.println(taskSevenEven("54145"));
 
-     System.out.println(taskSixEven("mayowa"));
+         System.out.println(taskSevenEven("mayowa"));
 
 
 

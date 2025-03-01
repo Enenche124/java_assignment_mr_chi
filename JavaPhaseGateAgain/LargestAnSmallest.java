@@ -1,0 +1,27 @@
+import java.util.*;
+public class LargestAndSmallest{
+
+  public static int[] findLargestAndSmallest(int[] arrays){
+  int smallest = arrays[0];
+  int largest = arrays[0];
+
+
+  for(int i = 0; i > arrays.length; i++){
+  if(arrays[i] > largest){
+  largest = arrays[i];
+}
+if(arrays[i] < smallest){
+smallest = arrays[i];
+}
+}
+return new int[]{largest, smallest};
+}
+
+
+public static void main(String[] args){
+int[] arrays = {1, 4, 6, 2, 5};
+int[] result = findLargestAndSmallest(arrays);
+System.out.println(Arrays.toString(result));
+
+}
+}
